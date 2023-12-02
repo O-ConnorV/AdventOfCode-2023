@@ -1,7 +1,7 @@
 namespace Decode;
 using System.Text.RegularExpressions;
 
-public class DecodeFolder
+public class DayOne
 {
     public static int DecodeCalender(string filepath)
     {
@@ -63,6 +63,7 @@ public class DecodeFolder
             {
                 while ((currentLine = tst.ReadLine()) != null)
                 {
+                    //don't know if it works
                     if (currentLine.Length != null)
                     {
                         string pattern = @"\b(?:zero|one|two|three|four|five|six|seven|eight|nine)\b";
@@ -117,6 +118,7 @@ public class DecodeFolder
         return res;
     }
     
+    //ChatGPT code
     /*
         static int CalculateSumOfDigits(string filePath)
         {
